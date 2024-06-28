@@ -1,1 +1,1 @@
-# CryptixICP
+# CryptixFraxtal
