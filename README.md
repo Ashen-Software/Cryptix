@@ -2,6 +2,7 @@
 ![ImagenTextoHorizontal](https://github.com/ashensoftware/CryptixFraxtal/assets/72664432/1912efff-d0ac-476a-815a-1822835d84ac)
 
 Welcome to CryptixFraxtal, a special version of the Cryptix project utilizing Fraxtal blockchain technology. This repository is created for the Fraxtal Hackathon hosted by DoraHacks.
+Cryptix is an innovative blockchain-based ticketing platform designed to revolutionize the way people buy tickets for concerts, events, and more. By leveraging blockchain technology, Cryptix ensures enhanced security, transparency, and user experience, preventing bot usage and illegal resale, providing clear ownership history, and eliminating intermediaries. The platform issues tickets, uses smart contracts for managing sales and transfers, and offers a decentralized marketplace for secure resale. Additionally, Cryptix integrates identity verification mechanisms and provides multi-channel access through web and mobile applications, making ticket purchasing seamless and secure.
 
 ## Features 🌟
 1. **Bot Prevention and Illegal Resale**:
