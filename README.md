@@ -1,56 +1,64 @@
-# CryptixFraxtal 🚀
-![ImagenTextoHorizontal](https://github.com/ashensoftware/CryptixFraxtal/assets/72664432/1912efff-d0ac-476a-815a-1822835d84ac)
 
-Welcome to CryptixFraxtal, a special version of the Cryptix project utilizing Fraxtal blockchain technology. This repository is created for the Fraxtal Hackathon hosted by DoraHacks.
-Cryptix is an innovative blockchain-based ticketing platform designed to revolutionize the way people buy tickets for concerts, events, and more. By leveraging blockchain technology, Cryptix ensures enhanced security, transparency, and user experience, preventing bot usage and illegal resale, providing clear ownership history, and eliminating intermediaries. The platform issues tickets, uses smart contracts for managing sales and transfers, and offers a decentralized marketplace for secure resale. Additionally, Cryptix integrates identity verification mechanisms and provides multi-channel access through web and mobile applications, making ticket purchasing seamless and secure.
+![tw-banner](https://github.com/thirdweb-example/vite-starter/assets/57885104/cfe2164b-b50b-4d8e-aaaa-31331da2d647)
 
-## Features 🌟
-1. **Bot Prevention and Illegal Resale**:
-   - Unique and immutable tickets on the blockchain to prevent bots and illegal resale.
-   - Smart contracts enforce strict rules on ticket transfer and resale.
+# vite-starter
 
-2. **Transparency and Traceability**:
-   - All ticket transactions are recorded on a public blockchain, ensuring transparency and authenticity.
-   - Clear and accessible ownership history.
+Starter template to build onchain applications with [thirdweb](https://thirdweb.com) and [vite](https://vitejs.dev/). 
 
-3. **Elimination of Intermediaries**:
-   - Direct ticket sales from organizers to consumers, reducing additional costs and fraud risk.
-   - Lower chances of human errors.
+## Features 
 
-4. **Enhanced User Experience**:
-   - Secure and quick ticket purchases and transfers via digital wallets.
-   - Safe and controlled resale options under predefined terms.
+- thirdweb & vite pre-installed and configured to reduce setup steps
+- ConnectButton to onboard users to your application
 
-## Getting Started 🛠️
-### Prerequisites
-- Node.js
-- npm or yarn
+## Installation
 
-### Installation
-1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/CryptixFraxtal.git
-    cd CryptixFraxtal
-    ```
-2. **Install dependencies**:
-    ```bash
-    npm install
-    # or
-    yarn install
-    ```
+Install the template using [thirdweb create](https://portal.thirdweb.com/cli/create)
 
-3. **Run the development server**:
-    ```bash
-    npm start
-    # or
-    yarn start
-    ```
+```bash
+  npx thirdweb create app --vite
+```
 
-## Hackathon Details 🎉
-This project was developed as part of the [Fraxtal Hackathon](https://dorahacks.io/hackathon/fraxtal/detail) by DoraHacks. We used Fraxtal's blockchain capabilities to enhance our ticketing solution.
+## Environment Variables
 
-## Contact Us 📬
-- Yulian Bedoya (https://github.com/ybedoyab)
-- Santiago Acevedo (https://github.com/Und3rW0rld)
-- Marycielo Berrio (https://github.com/MarycieloBerrio)
-- Melany Franco (https://github.com/MelanyMFM)
+To run this project, you will need to add the following environment variables to your .env file:
+
+`CLIENT_ID`
+
+To learn how to create a client ID, refer to the [client documentation](https://portal.thirdweb.com/typescript/v5/client). 
+
+## Run locally
+
+Install dependencies
+
+```bash
+yarn
+```
+
+Start development server
+
+```bash
+yarn dev
+```
+
+Create a production build
+
+```bash
+yarn build
+```
+
+Preview the production build
+
+```bash
+yarn preview
+```
+
+## Additional Resources
+
+- [Documentation](https://portal.thirdweb.com/typescript/v5)
+- [Templates](https://thirdweb.com/templates)
+- [YouTube](https://www.youtube.com/c/thirdweb)
+- [Blog](https://blog.thirdweb.com)
+
+## Need help?
+
+For help or feedback, please [visit our support site](https://thirdweb.com/support)
