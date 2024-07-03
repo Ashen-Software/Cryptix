@@ -1,0 +1,23 @@
+.mas_eventos{
+    cursor:pointer;
+    
+    text-align: center;
+    font-size:1.2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    
+    top:5rem;
+    padding: .5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 3rem;
+    border-radius: 6px;
+    gap:0.3rem;
+
+    img{
+        width: 2rem;
+        height: 2rem;
+    }
+}

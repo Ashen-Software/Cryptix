@@ -1,0 +1,44 @@
+.carrito{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    
+    gap:2rem;
+}
+
+
+
+.elementos_carrito{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    
+    padding: 0 10%;
+
+    .titulo_shopping{
+        color:#DA6918;
+        font-size: 2rem;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .botones_elemento{
+            padding:.7rem 10rem;
+        }
+        .checkout{
+            background-color: #DA6918;
+            color:white;
+            border:none;
+            font-size: 1rem;;
+            border-radius: 6px;
+        }
+
+        .cancelar{
+            color:#DA6918;
+            font-size: 1rem;
+        }
+    }
+}

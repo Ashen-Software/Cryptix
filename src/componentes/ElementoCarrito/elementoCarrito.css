@@ -1,0 +1,46 @@
+.elemento_carrito{
+    display: flex;
+    border:solid 1px #DA6918;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: space-between;
+    
+    .division{
+        display: flex;
+        
+    }
+    
+    .imagen_carrito{
+        width: 25rem;
+        height:15rem;
+    }
+
+    .contador{
+        padding:2rem;
+    }
+}
+
+.carrito{
+    padding: 5rem;
+}
+
+
+.informacion{
+    display:flex;
+    flex-direction: column;
+    padding:2rem;
+    
+    justify-content: center;
+    .precio{
+        color:#DA6918;
+        font-size: 1.6rem;
+    }
+    .titulo{
+        color:#D9D9D9;
+    }
+    .subtitulo{
+        color:#FDFDFD;
+        opacity: 0.5;
+    }
+}
+

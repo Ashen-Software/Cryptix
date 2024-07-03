@@ -1,0 +1,40 @@
+
+
+.eventView-container{
+    color:aliceblue;
+    display:flex;
+    gap:8rem;
+    justify-content: center;
+    padding: 10rem 0 5rem 0;
+    
+    
+    .imagen{
+        width: 40rem;
+        border-radius: 6px;
+        border: solid 1px #000000;
+        box-shadow: 0px 0px 30px 30px rgba(0, 0, 0, 0.2);
+    }
+
+   
+} 
+
+.about_evento{
+    padding: 0 10rem;
+    display:flex;
+    flex-direction: column;
+    
+    gap: 2rem;
+    padding-bottom: 10rem;
+    .titulo_about_de_la_vista{
+        color:#DA6918;
+        font-size: 3rem;
+        
+    }
+
+    .descripcion_evento{
+        color:#FDFDFD;
+        font-size: 1.5rem;
+    }
+
+}
+

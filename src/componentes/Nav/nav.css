@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #1E1E1E;
+    width: 100%;
+    padding:0.65rem 2rem;
+    z-index: 100;
+    .izq{
+        display:flex;
+        gap:2rem;
+        align-items: center;
+        a{
+            font-family: 'Yantramanav';
+            text-decoration: none;
+            cursor: pointer;
+            color:#DA6918;
+        }
+    
+        img{
+            width: 10rem;
+        }
+    }
+    .der{
+        display:flex;
+        font-family: 'Yantramanav';
+        gap:2rem;
+        color:#DA6918;
+        align-items: center;
+        cursor:pointer;
+        .login{
+            
+            padding:0.5rem 2rem;
+            border-radius: 8px;
+            background-color: rgba(218,105,24,0.5);
+            color:whitesmoke;
+        }
+        .link-login{
+            text-decoration: none;
+        }
+    
+    }
+}
