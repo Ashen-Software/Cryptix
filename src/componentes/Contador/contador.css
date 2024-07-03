@@ -1,0 +1,19 @@
+.contador{
+    display:flex;
+    align-items: center;
+    
+    button{
+            color: black;
+            border: none;
+            padding: .2rem;
+            width: 1.8rem;;
+            font-size: 1.2rem;
+            cursor: pointer;
+    }
+    p{
+        background-color: #FDFDFD;
+        color:black;
+        font-size: 1.2rem;
+        padding: .2rem .8rem;
+    }
+}
