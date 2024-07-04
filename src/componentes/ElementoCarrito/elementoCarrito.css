@@ -13,6 +13,7 @@
     .imagen_carrito{
         width: 25rem;
         height:15rem;
+        cursor:pointer;
     }
 
     .contador{

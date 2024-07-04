@@ -51,9 +51,13 @@ gap:2rem;
             align-items: center;
             justify-content: left;
             gap:2rem;
-           
+          
             padding-bottom: .5rem;
             padding-left: 0;
+
+            .text{
+                text-decoration: none;
+            }
         }
     }
 }

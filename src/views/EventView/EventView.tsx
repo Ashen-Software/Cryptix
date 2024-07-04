@@ -29,8 +29,7 @@ function EventView() {
           ciudad={event.ciudad}
           hora={event.hora}
           imagen={event.imagen}
-          id = {event.id}
-        />
+          id={event.id} key={0} descripcion={''}        />
       </div>
       <div className='about_evento'>
         <p className='titulo_about_de_la_vista'>About this Event</p>

@@ -39,7 +39,12 @@ function ShoppingCart() {
               precio={ticket.precio}
               titulo={ticket.titulo}
               subtitulo={ticket.subtitulo}
+              hora={ticket.hora}
               imagen={ticket.imagen}
+              descripcion={ticket.descripcion}
+              id={ticket.id}
+              ciudad={ticket.ciudad}
+              fecha={ticket.fecha}
             />
           ))
         )}

@@ -21,6 +21,7 @@ function Evento(props: Props){
   const [showAddToCart, setShowAddToCart] = useState(true);
 
   const mostrarEvento = () => {
+    
     navigate(`/Events/${props.id}`, { state: { event: props } });
   };
 
