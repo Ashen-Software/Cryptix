@@ -21,7 +21,6 @@ function Events(){
             <a >More Events</a>
             </div>
             <Eventos/>
-            <Link to="/Cart">Ver Carrito</Link>
             <Footer/>
         </>
     );

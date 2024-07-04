@@ -3,6 +3,7 @@ import Events from './views/Events/Events'
 import Home from './views/Home/Home'
 import Cart from './views/Cart/Cart'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import './App.css'
 
 function App() {
 

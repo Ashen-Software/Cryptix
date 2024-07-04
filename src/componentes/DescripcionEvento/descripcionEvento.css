@@ -64,6 +64,11 @@
         font-size: 1.3rem;
         border-radius: 6px;
         cursor:pointer;
+        font-weight: bold;
+    }
+
+    .delete{
+        background-color: #ff0000bb;
     }
 
     .abajo{
