@@ -19,15 +19,15 @@ function Contact(){
                     <p className='titulo-contact-information'>Contact Information</p>
                     <div className='informacion'>
                         <img src={email} alt="email icon"/>
-                        <a href="mailto:softwareashen@gmail.com">softwareashen@gmail.com</a>
+                        <a className="text" href="mailto:softwareashen@gmail.com">softwareashen@gmail.com</a>
                     </div>
                     <div className='informacion' >
                         <img src={github} alt="github icon"/>
-                        <a href="https://github.com/ashensoftware">Github</a>
+                        <a className="text" href="https://github.com/ashensoftware">Github</a>
                     </div>
                     <div className='informacion'>
                         <img src={location} alt="location icon"/>
-                        <p>Medellin, Colombia</p>
+                        <p className='text'>Medellin, Colombia</p>
                     </div>
                 </div>
             </div>
