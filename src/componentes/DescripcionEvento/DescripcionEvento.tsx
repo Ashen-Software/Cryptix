@@ -3,7 +3,6 @@ import Contador from '../Contador/Contador';
 import { useEffect, useState } from 'react';
 import credit_card from '../../assets/credit_card_icon.png';
 import ticketsCarrito from '../../assets/tickets/ticketsCarrito';
-import { ProfileSchemaInput } from '@thirdweb-dev/sdk';
 
 type Props = {
   id: number;
@@ -18,9 +17,14 @@ type Props = {
   key: number;
 };
 
+type Ticket = Props & {
+  cantidad: number;
+};
+
 function DescripcionEvento(props: Props) {
   const [contador, setContador] = useState(1);
   const [showAddToCart, setShowAddToCart] = useState(true);
+
   const incrementar = () => {
     setContador(contador + 1);
   };
@@ -28,24 +32,43 @@ function DescripcionEvento(props: Props) {
   const decrementar = () => {
     if (contador > 1) {
       setContador(contador - 1);
-    } else {
-      setContador(1);
     }
   };
 
   const agregarCarrito = () => {
-    ticketsCarrito.push(props);
+    const ticket: Ticket = { ...props, cantidad: contador };
+    const index = ticketsCarrito.findIndex((item) => item.id === props.id);
+    if (index === -1) {
+      ticketsCarrito.push(ticket);
+    } else {
+      ticketsCarrito[index] = ticket;
+    }
     setShowAddToCart(false);
   };
-
   useEffect(() => {
     for (let i = 0; i < ticketsCarrito.length; i++) {
       if (ticketsCarrito[i].id === props.id) {
         setShowAddToCart(false);
+        setContador(ticketsCarrito[i].cantidad);
         break;
       }
     }
-  }, [props.id, setShowAddToCart]);
+  }, [props.id]);
+
+  const actualizarCarrito = () => {
+    const index = ticketsCarrito.findIndex((item) => item.id === props.id);
+    if (index !== -1) {
+      ticketsCarrito[index].cantidad = contador;
+    }
+  };
+
+
+
+  useEffect(() => {    
+    if (!showAddToCart) {
+      actualizarCarrito();
+    }
+  }, [contador]);
 
   const eliminarCarrito = () => {
     for (let i = 0; i < ticketsCarrito.length; i++) {
