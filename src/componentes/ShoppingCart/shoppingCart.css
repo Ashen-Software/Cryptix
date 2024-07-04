@@ -27,6 +27,7 @@
         
         .botones_elemento{
             padding:.7rem 10rem;
+            cursor: pointer;
         }
         .checkout{
             background-color: #DA6918;

@@ -1,12 +1,11 @@
 import "./shoppingCart.css";
-import tickets from "../../assets/tickets/ticketsCarrito";
+import ticketsData from "../../assets/tickets/ticketsCarrito";
 import ElementoCarrito from "../ElementoCarrito/ElementoCarrito";
-import { ConnectButton, useActiveAccount, TransactionButton, useSwitchActiveWalletChain  } from "thirdweb/react";
+import { ConnectButton, useActiveAccount } from "thirdweb/react";
 import { createWallet, inAppWallet } from "thirdweb/wallets";
 import EmptyCart from "../EmptyCart/EmptyCart";
-import {  } from "thirdweb/chains";
 import { useNavigate } from 'react-router-dom';
-
+import { useState } from 'react';
 
 type Ticket = {
   id: number;
@@ -14,12 +13,13 @@ type Ticket = {
   titulo: string;
   subtitulo: string;
   imagen: string;
-  hora: string; // Add the missing 'hora' property
-  descripcion: string; // Add the missing 'descripcion' property
-  ciudad: string; // Add the missing 'ciudad' property
-  fecha: string; // Add the missing 'fecha' property
+  hora: string;
+  descripcion: string;
+  ciudad: string;
+  fecha: string;
   cantidad: number;
 };
+
 const wallets = [
   inAppWallet(),
   createWallet("io.metamask"),
@@ -27,13 +27,20 @@ const wallets = [
   createWallet("me.rainbow"),
 ];
 
-
 function ShoppingCart() {
+  const [tickets, setTickets] = useState<Ticket[]>(ticketsData); // Initialize state with ticketsData
+  const account = useActiveAccount();
+  const navigate = useNavigate();
+
   function success() {
     navigate("/SuccessTransaction");
   }
-  const account = useActiveAccount();
-  const navigate = useNavigate();
+
+  function cancelAll() {
+    setTickets([]); // Clear the tickets state
+    ticketsData.splice(0, tickets.length);
+  }
+
   return (
     <div className="carrito">
       <div className="elementos_carrito">
@@ -42,7 +49,7 @@ function ShoppingCart() {
         {tickets.length === 0 ? (
           <EmptyCart />
         ) : (
-          tickets.map((ticket: Ticket) => ( // Specify the type of 'ticket' as 'Ticket'
+          tickets.map((ticket: Ticket) => (
             <ElementoCarrito
               key={ticket.id}
               precio={ticket.precio}
@@ -61,7 +68,7 @@ function ShoppingCart() {
         {tickets.length > 0 && (
           <div className="botones">
             <button className="botones_elemento checkout" onClick={success}>Checkout</button>
-            <p className="botones_elemento cancelar">Cancel All</p>
+            <p onClick={cancelAll} className="botones_elemento cancelar">Cancel All</p>
           </div>
         )}
 
