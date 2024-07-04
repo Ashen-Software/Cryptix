@@ -27,13 +27,13 @@ const wallets = [
   createWallet("me.rainbow"),
 ];
 
-const navigate = useNavigate();
-function success() {
-  navigate("/SuccessTransaction");
-}
-function ShoppingCart() {
-  const account = useActiveAccount();
 
+function ShoppingCart() {
+  function success() {
+    navigate("/SuccessTransaction");
+  }
+  const account = useActiveAccount();
+  const navigate = useNavigate();
   return (
     <div className="carrito">
       <div className="elementos_carrito">
