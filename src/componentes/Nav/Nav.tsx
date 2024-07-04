@@ -4,6 +4,11 @@ import { Link as ScrollLink, scroller } from 'react-scroll';
 import Logo from "../../assets/logo.png";
 import { ConnectButton } from "thirdweb/react";
 import { createWallet, inAppWallet } from "thirdweb/wallets";
+import { useActiveAccount } from "thirdweb/react";
+import CartIcon from "../../assets/shopping-cart.svg";
+
+
+
 const wallets = [
     inAppWallet(),
     createWallet("io.metamask"),
@@ -12,7 +17,7 @@ const wallets = [
   ];
 function Nav() {
     const navigate = useNavigate();
-
+    const activeAccount = useActiveAccount();
     const handleNavigation = (target: string) => {
         if (window.location.pathname !== "/") {
             navigate("/", { replace: true });
@@ -43,7 +48,14 @@ function Nav() {
                 <Link to={"/Events"}>EVENTS</Link>
             </div>
             <div className='der'>
+            {activeAccount && <Link className='link' to={"/Cart"}>
+            <div className='cart-button'>
+                <img src={CartIcon} alt="" />
+                <span>Shopping Cart</span>
+
+            </div></Link>}
                 <ConnectButton client={{ clientId: "ba76184dfc70100e3fb2d23dbb057170", secretKey: "er6KlYI4tQlh5WPNn_Fuy00guFk43yP24F9lCPtnKdOphDl0hSjSsfutjaN_4C44k2aPcywO2xyU6eMlS2aGqw" }} wallets={wallets} />
+                
             </div>
         </nav>
     );

@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import './evento.css';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
+import ticketsCarrito from '../../assets/tickets/ticketsCarrito';
 
 type Props = {
   id: number;
@@ -13,10 +14,7 @@ type Props = {
   precio: string;
   ciudad: string;
   descripcion: string;
-  key: number;
 };
-
-const ticketsCarrito: Props[] = []; // Define ticketsCarrito as an array of Props objects
 
 function Evento(props: Props){
   const navigate = useNavigate();
@@ -31,8 +29,7 @@ function Evento(props: Props){
     setShowAddToCart(false);
   };
 
-  
-   useEffect(() => {
+  useEffect(() => {
     for (let i = 0; i < ticketsCarrito.length; i++) {
       if (ticketsCarrito[i].id === props.id) {
         setShowAddToCart(false);
@@ -51,7 +48,6 @@ function Evento(props: Props){
     }
   }
 
-
   return (
     <div className='evento'>
       <div className='event-header'>
@@ -60,8 +56,8 @@ function Evento(props: Props){
       <p className="titulo">{props.titulo}</p>
       <p className='subtitulo'>{props.subtitulo}</p>
       <p className='precio'>€ {props.precio}</p>
-      { showAddToCart && <button className='boton' onClick={agregarCarrito}>Add to Cart</button> }
-      { !showAddToCart && <button className='delete' onClick={eliminarCarrito}>Delete from Cart</button> }
+      { showAddToCart && <button className='boton' onClick={agregarCarrito}>Add to Cart!</button> }
+      { !showAddToCart && <button className='delete boton' onClick={eliminarCarrito}>Delete from Cart</button> }
     </div>
   );
 };
