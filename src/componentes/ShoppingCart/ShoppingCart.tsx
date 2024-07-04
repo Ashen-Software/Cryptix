@@ -1,9 +1,10 @@
 import "./shoppingCart.css";
 import tickets from "../../assets/tickets/ticketsCarrito";
 import ElementoCarrito from "../ElementoCarrito/ElementoCarrito";
-import { ConnectButton, useActiveAccount } from "thirdweb/react";
+import { ConnectButton, useActiveAccount, TransactionButton, useSwitchActiveWalletChain  } from "thirdweb/react";
 import { createWallet, inAppWallet } from "thirdweb/wallets";
 import EmptyCart from "../EmptyCart/EmptyCart";
+import {  } from "thirdweb/chains";
 
 type Ticket = {
   id: number;
@@ -18,9 +19,12 @@ const wallets = [
   createWallet("com.coinbase.wallet"),
   createWallet("me.rainbow"),
 ];
-
+function success() {
+  window.location.href = "/SuccessTransaction";
+}
 function ShoppingCart() {
   const account = useActiveAccount();
+
   return (
     <div className="carrito">
       <div className="elementos_carrito">
@@ -42,7 +46,7 @@ function ShoppingCart() {
 
         {tickets.length > 0 && (
           <div className="botones">
-            <button className="botones_elemento checkout">Checkout</button>
+            <button className="botones_elemento checkout" onClick={success}>Checkout</button>
             <p className="botones_elemento cancelar">Cancel All</p>
           </div>
         )}
