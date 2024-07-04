@@ -1,7 +1,7 @@
 
 import "./contador.css";
 
-function Contador({ value, decrementar, incrementar }) {
+function Contador({ value, decrementar, incrementar }: { value: any, decrementar: any, incrementar: any }) {
 
   return (
     <div className="contador">

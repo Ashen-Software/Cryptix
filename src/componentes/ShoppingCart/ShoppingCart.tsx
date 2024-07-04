@@ -12,6 +12,11 @@ type Ticket = {
   titulo: string;
   subtitulo: string;
   imagen: string;
+  hora: string; // Add the missing 'hora' property
+  descripcion: string; // Add the missing 'descripcion' property
+  ciudad: string; // Add the missing 'ciudad' property
+  fecha: string; // Add the missing 'fecha' property
+  cantidad: number;
 };
 const wallets = [
   inAppWallet(),
@@ -33,7 +38,7 @@ function ShoppingCart() {
         {tickets.length === 0 ? (
           <EmptyCart />
         ) : (
-          tickets.map((ticket) => (
+          tickets.map((ticket: Ticket) => ( // Specify the type of 'ticket' as 'Ticket'
             <ElementoCarrito
               key={ticket.id}
               precio={ticket.precio}
