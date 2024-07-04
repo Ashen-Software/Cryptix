@@ -4,6 +4,7 @@ import Home from './views/Home/Home'
 import Cart from './views/Cart/Cart'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import SuccessTransaction from './views/SuccessTransaction/SuccessTransaction'
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
         <>
           <Route path="/Events/:id" element={<EventView />} />
           <Route path="/Cart" element={<Cart />} />
-          <Route />
+          <Route path='/SuccessTransaction' element={<SuccessTransaction />} />
         </>
       </Routes>
     </BrowserRouter>

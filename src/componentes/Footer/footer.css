@@ -45,8 +45,12 @@
 				gap: 1rem;
 				list-style: none;
 				li{
+
+					cursor:pointer;
 					.arrow{
 						color: #DA6918;
+
+					
 					}
 					a{text-decoration: none;
 						color: #fdfdfd;

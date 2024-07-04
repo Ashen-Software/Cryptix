@@ -1,0 +1,30 @@
+.congratulations-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 7rem 0 5rem 0;
+    img{
+        width: 10rem;
+    }
+    
+    .congratulations{
+        color:#DA6918;
+        font-size: 3rem;
+    }
+
+    .congratulations-subtitle{
+        font-size: 2rem;
+    }
+
+    .home-link{
+        text-decoration: none;
+        background-color: #DA6918;
+        border-radius: 12px;
+        padding: .5rem 2rem;
+     
+        font-size: 2rem;
+    }
+
+}

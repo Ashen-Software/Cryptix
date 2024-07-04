@@ -45,9 +45,10 @@ const Footer = () => {
 				</div>
 				<div className="about-section">
 					<h4>Cryptix</h4>
-					<p>The proper Footer on proper time can
-						preserve you protection. We assist you 
-						make sureeverybody forward.</p>
+					<p>Criptix revolutionizes ticketing with blockchain technology, offering secure 
+						NFT tickets, transparent transactions, bot prevention, a fair resale market, and a 
+						user-friendly interface.
+					</p>
 				</div>
 				<div className="links-section">
 					<h4>Quick link</h4>

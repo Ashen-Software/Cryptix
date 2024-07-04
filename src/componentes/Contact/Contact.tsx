@@ -14,7 +14,7 @@ function Contact(){
             </div>
 
             <div className='contact-container'>
-                <img src={maquilon} alt="maquilon foto"/>
+                <img className='maquilon' src="https://syntrio.com/wp-content/uploads/2022/11/syntrio-contact-purple-us.png" alt="maquilon foto"/>
                 <div className='contact-information'>
                     <p className='titulo-contact-information'>Contact Information</p>
                     <div className='informacion'>
