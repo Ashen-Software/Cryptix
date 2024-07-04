@@ -29,7 +29,7 @@ Cryptix is an innovative blockchain-based ticketing platform designed to revolut
 ### Installation
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/CryptixFraxtal.git
+    git clone https://github.com/ashensoftware/CryptixFraxtal.git
     cd CryptixFraxtal
     ```
 2. **Install dependencies**:
