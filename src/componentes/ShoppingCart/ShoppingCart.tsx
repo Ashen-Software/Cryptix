@@ -5,6 +5,8 @@ import { ConnectButton, useActiveAccount, TransactionButton, useSwitchActiveWall
 import { createWallet, inAppWallet } from "thirdweb/wallets";
 import EmptyCart from "../EmptyCart/EmptyCart";
 import {  } from "thirdweb/chains";
+import { useNavigate } from 'react-router-dom';
+
 
 type Ticket = {
   id: number;
@@ -24,8 +26,10 @@ const wallets = [
   createWallet("com.coinbase.wallet"),
   createWallet("me.rainbow"),
 ];
+
+const navigate = useNavigate();
 function success() {
-  window.location.href = "/SuccessTransaction";
+  navigate("/SuccessTransaction");
 }
 function ShoppingCart() {
   const account = useActiveAccount();
