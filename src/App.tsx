@@ -17,7 +17,7 @@ function App() {
         <>
           <Route path="/Events/:id" element={<EventView />} />
           <Route path="/Cart" element={<Cart />} />
-          <Route path='/SuccessTransaction' element={<SuccessTransaction />} />
+          <Route path="/SuccessTransaction" element={<SuccessTransaction />} />
         </>
       </Routes>
     </BrowserRouter>
