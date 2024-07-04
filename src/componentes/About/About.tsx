@@ -9,7 +9,7 @@ const About = () => {
 		<section className='about-section'>
 			<img className='arrow-img left' src={Arrows} alt="" />
 			<h2 className='about-title'>ABOUT</h2>
-			<p className='about-text'>Welcome to Criptix, where we revolutionize ticketing through blockchain technology. Our platform ensures secure, transparent, and user-friendly ticket transactions by issuing tickets as unique, non-fungible tokens (NFTs) on the blockchain.</p>
+			<p className='about-text'>Welcome to Cryptix, where we revolutionize ticketing through blockchain technology. Our platform ensures secure, transparent, and user-friendly ticket transactions by issuing tickets as unique, non-fungible tokens (NFTs) on the blockchain.</p>
 			<img className='arrow-img right' src={Arrows} alt="" />
 		</section>
 		<section className="features-section">
