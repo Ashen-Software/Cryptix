@@ -1,15 +1,7 @@
-import jazz from '../../assets/eventos/jazz.png';
-import duolingo from '../../assets/eventos/duolingo.png';
-import padel from '../../assets/eventos/padel.png';
-import copaamerica from '../../assets/eventos/copaamerica.png';
-import monsteruck from '../../assets/eventos/monstertruck.png';
-import posada from '../../assets/eventos/posada.png';
-import event4 from '../../assets/eventos/event4.jpg';
-
 export default [
   {
     id: 1,
-    imagen: jazz,
+    imagen: "https://tuboleta.com/imagenes/66437845c5909.jpg",
     titulo: "CLÁSICOS DEL JAZZ CON LA BIG BAND DE MEDELLÍN",
     subtitulo: "Teatro Metropolitano José Gutiérrez Gómez",
     fecha: "2024-07-15",
@@ -20,7 +12,7 @@ export default [
   },
   {
     id: 2,
-    imagen: duolingo,
+    imagen: "https://images.ctfassets.net/45eypz94062x/5mThymXG0xDhduheCwZ3NE/36bbe27425615a67d369d15322fca3ec/duo_on_ice_hero.jpg?w=1000&h=750&fit=fill&f=center&q=75&fm=avif",
     titulo: "DUOLINGO ON ICE",
     subtitulo: "Auditório Ibirapuera São Paulo, BR",
     fecha: "2024-08-10",
@@ -31,7 +23,7 @@ export default [
   },
   {
     id: 3,
-    imagen: monsteruck,
+    imagen: "https://palcosyboletas.com/wp-content/uploads/2024/05/monster-truck-medellin-2024-macarena-1024x1024.png",
     titulo: "MONSTER TRUCK 2024-MEDELLÍN",
     subtitulo: "Centro de Eventos La Macarena",
     fecha: "2024-09-20",
@@ -42,7 +34,7 @@ export default [
   },
   {
     id: 4,
-    imagen: copaamerica,
+    imagen: "https://lh3.googleusercontent.com/drive-viewer/AKGpihYBIRWbzx7xGbtVXKfYLnK4t23dFME_ozE1-VNmYs7eSpuaqwEsKWdMFktNW08Bv5MVcKmrwugNIos8okUG_qT5eMBUS8ptEtI=w1366-h641",
     titulo: "COPA AMERICA: GROUP D - COLOMBIA vs TBD",
     subtitulo: "State Farm Stadium, Glendale, AZ",
     fecha: "2024-10-12",
@@ -53,7 +45,7 @@ export default [
   },
   {
     id: 5,
-    imagen: posada,
+    imagen: "https://tuboleta.com/imagenes/66297604404ea.webp",
     titulo: "LUIS ALBERTO POSADA | EL ÍDOLO DEL PUEBLO",
     subtitulo: "Movistar Arena",
     fecha: "2024-11-05",
@@ -64,7 +56,7 @@ export default [
   },
   {
     id: 6,
-    imagen: padel,
+    imagen: "https://tuboleta.com/imagenes/66846423e9a65.webp",
     titulo: "ZURICH COLOMBIA PADEL CUP",
     subtitulo: "Country Club de Bogotá",
     fecha: "2024-12-01",
@@ -75,7 +67,7 @@ export default [
   },
   {
     id: 7,
-    imagen: event4, // Replace with actual image import
+    imagen: "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYC3XBiJHITLU5Ls9eW5Xa8rmtUwmtIGNcKGLbBZY0jyYWfWpftZG2yCdX4wnIpuxa3HV4Qi56D9qlAbv2fDo1mH5i9rJsNNWI=w723-h641", // Replace with actual image import
     titulo: "ROCK FESTIVAL 2024",
     subtitulo: "Estadio El Campín, Bogotá",
     fecha: "2024-08-25",
@@ -86,7 +78,7 @@ export default [
   },
   {
     id: 8,
-    imagen: event4, // Replace with actual image import
+    imagen:  "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYC3XBiJHITLU5Ls9eW5Xa8rmtUwmtIGNcKGLbBZY0jyYWfWpftZG2yCdX4wnIpuxa3HV4Qi56D9qlAbv2fDo1mH5i9rJsNNWI=w723-h641", // Replace with actual image import
     titulo: "INTERNATIONAL FOOD FEST",
     subtitulo: "Parque Simón Bolívar, Bogotá",
     fecha: "2024-07-30",
@@ -97,7 +89,7 @@ export default [
   },
   {
     id: 9,
-    imagen: event4, // Replace with actual image import
+    imagen:  "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYC3XBiJHITLU5Ls9eW5Xa8rmtUwmtIGNcKGLbBZY0jyYWfWpftZG2yCdX4wnIpuxa3HV4Qi56D9qlAbv2fDo1mH5i9rJsNNWI=w723-h641", // Replace with actual image import
     titulo: "MEDELLÍN FILM FESTIVAL",
     subtitulo: "Teatro Pablo Tobón Uribe",
     fecha: "2024-09-05",
@@ -108,7 +100,7 @@ export default [
   },
   {
     id: 10,
-    imagen: event4, // Replace with actual image import
+    imagen:  "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYC3XBiJHITLU5Ls9eW5Xa8rmtUwmtIGNcKGLbBZY0jyYWfWpftZG2yCdX4wnIpuxa3HV4Qi56D9qlAbv2fDo1mH5i9rJsNNWI=w723-h641", // Replace with actual image import
     titulo: "COLOMBIAN COFFEE EXPO",
     subtitulo: "Corferias, Bogotá",
     fecha: "2024-10-20",
@@ -119,7 +111,7 @@ export default [
   },
   {
     id: 11,
-    imagen: event4, // Replace with actual image import
+    imagen:  "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYC3XBiJHITLU5Ls9eW5Xa8rmtUwmtIGNcKGLbBZY0jyYWfWpftZG2yCdX4wnIpuxa3HV4Qi56D9qlAbv2fDo1mH5i9rJsNNWI=w723-h641", // Replace with actual image import
     titulo: "FASHION WEEK 2024",
     subtitulo: "Plaza Mayor, Medellín",
     fecha: "2024-11-15",
@@ -130,7 +122,7 @@ export default [
   },
   {
     id: 12,
-    imagen: event4, // Replace with actual image import
+    imagen:  "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYC3XBiJHITLU5Ls9eW5Xa8rmtUwmtIGNcKGLbBZY0jyYWfWpftZG2yCdX4wnIpuxa3HV4Qi56D9qlAbv2fDo1mH5i9rJsNNWI=w723-h641", // Replace with actual image import
     titulo: "COLOMBIAN ART EXHIBITION",
     subtitulo: "Museo del Oro, Bogotá",
     fecha: "2024-12-22",
@@ -141,7 +133,7 @@ export default [
   },
   {
     id: 13,
-    imagen: event4, // Replace with actual image import
+    imagen:  "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYC3XBiJHITLU5Ls9eW5Xa8rmtUwmtIGNcKGLbBZY0jyYWfWpftZG2yCdX4wnIpuxa3HV4Qi56D9qlAbv2fDo1mH5i9rJsNNWI=w723-h641", // Replace with actual image import
     titulo: "MEDELLÍN TECHNO FEST",
     subtitulo: "Parque Norte, Medellín",
     fecha: "2024-07-22",
@@ -152,7 +144,7 @@ export default [
   },
   {
     id: 14,
-    imagen: event4, // Replace with actual image import
+    imagen:  "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYC3XBiJHITLU5Ls9eW5Xa8rmtUwmtIGNcKGLbBZY0jyYWfWpftZG2yCdX4wnIpuxa3HV4Qi56D9qlAbv2fDo1mH5i9rJsNNWI=w723-h641", // Replace with actual image import
     titulo: "INTERNATIONAL BOOK FAIR",
     subtitulo: "Centro de Convenciones, Cartagena",
     fecha: "2024-08-18",

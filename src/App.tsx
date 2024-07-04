@@ -16,6 +16,7 @@ function App() {
         <>
           <Route path="/Events/:id" element={<EventView />} />
           <Route path="/Cart" element={<Cart />} />
+          <Route />
         </>
       </Routes>
     </BrowserRouter>

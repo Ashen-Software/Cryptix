@@ -26,7 +26,13 @@ function Evento(props: Props){
   };
 
   const agregarCarrito = () => {
-    ticketsCarrito.push(props);
+    const ticket: Ticket = { ...props, cantidad: 1 };
+    const index = ticketsCarrito.findIndex((item) => item.id === props.id);
+    if (index === -1) {
+      ticketsCarrito.push(ticket);
+    } else {
+      ticketsCarrito[index] = ticket;
+    }
     setShowAddToCart(false);
   };
 
