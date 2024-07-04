@@ -1,0 +1,62 @@
+.contactEntero{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 5rem 0 5rem 0;
+gap:2rem;
+
+
+.titulos{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 0;
+    width: 100%;
+    padding-left: 20rem;
+    
+}
+.titulo-contact{
+    color:#DA6918;
+    
+    font-size: 2.5rem;
+}
+
+.subtitulo-contact{
+    font-size: 1.5rem;
+}
+
+
+.contact-container{
+    display: flex;
+    
+    
+    gap:3.5rem;
+    .contact-information{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        border-radius: 8px;
+        border:#DA6918 solid 1.5px;
+
+        padding:2rem 9rem 0 2rem;
+        .titulo-contact-information{
+            font-size: 2rem;
+            color:#DA6918;
+
+        }
+        .informacion{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            gap:2rem;
+           
+            padding-bottom: .5rem;
+            padding-left: 0;
+        }
+    }
+}
+
+
+}

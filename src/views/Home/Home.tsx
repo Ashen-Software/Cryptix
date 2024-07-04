@@ -1,6 +1,7 @@
 import About from '../../componentes/About/About'
 import Footer from '../../componentes/Footer/Footer'
 import Header from '../../componentes/Header/Header'
+import Contact from '../../componentes/Contact/Contact'
 import './home.css'
 
 
@@ -15,7 +16,7 @@ function Home() {
       <About/>
     </div>
     <div id='contact' className='contact'>
-      <p>Este es el contact</p>
+      <Contact/>
     </div>
     </div>
     <Footer/>
