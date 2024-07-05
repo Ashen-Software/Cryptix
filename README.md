@@ -34,20 +34,16 @@ Cryptix is an innovative blockchain-based ticketing platform designed to revolut
     ```
 2. **Install dependencies**:
     ```bash
-    npm install
-    # or
-    yarn install
+    npm install --force
     ```
 
 3. **Run the development server**:
     ```bash
     npm start
-    # or
-    yarn start
     ```
 
 ## Hackathon Details 🎉
-This project was developed as part of the [Fraxtal Hackathon](https://dorahacks.io/hackathon/fraxtal/detail) by DoraHacks. We used Fraxtal's blockchain capabilities to enhance our ticketing solution.
+This project was developed as part of the [Fraxtal Hackathon](https://dorahacks.io/hackathon/fraxtal/detail) by DoraHacks and as [BUIDL]([https://dorahacks.io/hackathon/fraxtal/detail](https://dorahacks.io/buidl/13965)). We used Fraxtal's blockchain capabilities to enhance our ticketing solution.
 
 ## Contact Us 📬
 - Yulian Bedoya (https://github.com/ybedoyab)
